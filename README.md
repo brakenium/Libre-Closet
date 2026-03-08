@@ -113,6 +113,7 @@ npm run start:prod
 | `OBJECT_STORAGE_SECRET_ACCESS_KEY` | S3 secret key                                  | —              |
 | `OBJECT_STORAGE_ENDPOINT`          | S3-compatible endpoint URL                     | —              |
 | `OBJECT_STORAGE_REGION`            | S3 region                                      | —              |
+| `OBJECT_STORAGE_BUCKET_NAME`       | S3 bucket name                                 | `libre-closet` |
 | `EMAIL_FROM_ADDRESS`               | From address for password reset emails         | —              |
 | `EMAIL_TRANSPORT`                  | `gmail` or `mailgun`                           | `gmail`        |
 | `EMAIL_API_KEY`                    | Mailgun API key                                | —              |
