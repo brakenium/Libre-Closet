@@ -152,6 +152,11 @@ import { LoggerModule } from 'nestjs-pino';
           then: Joi.string().required(),
           otherwise: Joi.optional(),
         }),
+        OBJECT_STORAGE_REGION: Joi.string().when('FILE_STORAGE_TYPE', {
+          is: 'object',
+          then: Joi.string().required(),
+          otherwise: Joi.optional(),
+        }),
       }),
       validationOptions: {
         abortEarly: true,
@@ -199,7 +204,7 @@ export class AppModule implements OnModuleInit, NestModule {
   constructor(
     private readonly orm: MikroORM,
     private readonly configService: ConfigService,
-  ) {}
+  ) { }
 
   async onModuleInit(): Promise<void> {
     this.logger.log(`NODE_ENV: ${this.configService.get('NODE_ENV')}`);

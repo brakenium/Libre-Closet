@@ -36,6 +36,10 @@ import { S3FileService } from './s3-file/s3-file.service';
               'OBJECT_STORAGE_SECRET_ACCESS_KEY',
               'password',
             ),
+            region: configService.get(
+              'OBJECT_STORAGE_REGION',
+              'us-east-1'
+            ),
             endpoint: configService.get(
               'OBJECT_STORAGE_ENDPOINT',
               'http://127.0.0.1:9000',
