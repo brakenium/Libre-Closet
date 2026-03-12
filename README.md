@@ -112,7 +112,7 @@ npm run start:prod
 | `OBJECT_STORAGE_ACCESS_KEY_ID`     | S3 access key                                  | —              | `AKIAIOSFODNN7EXAMPLE`                                                                    |
 | `OBJECT_STORAGE_SECRET_ACCESS_KEY` | S3 secret key                                  | —              | `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`                                                |
 | `OBJECT_STORAGE_ENDPOINT`          | S3-compatible endpoint URL                     | —              | `https://s3.example.com:8443`                                                             |
-| `OBJECT_STORAGE_REGION`            | S3 region                                      | —              | `us-east-1` or `garage`                                                                   |
+| `OBJECT_STORAGE_REGION`            | S3 region                                      | `us-east-1`    | `us-west-1`                                                                               |
 | `OBJECT_STORAGE_BUCKET_NAME`       | S3 bucket name                                 | `libre-closet` | `my-awesome-closet-manager-bucket`                                                        |
 | `EMAIL_FROM_ADDRESS`               | From address for password reset emails         | —              | `LibreCloset@example.com`                                                                 |
 | `EMAIL_TRANSPORT`                  | `gmail` or `mailgun`                           | `gmail`        | `mailgun`                                                                                 |
